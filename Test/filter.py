@@ -12,6 +12,4 @@ print(dat.info)
 eeg1 = dat.to_data_frame("EEG 1")
 
 # apply notch filter, not sure about the parameters
-notch_filter(eeg1.values, 60, np.arange(12, 30))
-
-##Error: ValueError: The requested filter length 397 is too short for the requested 0.18 Hz transition band, which requires 555 samples
+notch_filter(eeg1.values, 250, np.arange(60, 121, 60))
