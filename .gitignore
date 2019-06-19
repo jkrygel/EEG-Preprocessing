@@ -1,3 +1,6 @@
 # bdf and txt file
 *.bdf
 *.txt
+
+# jupyter notebook
+Test/.ipynb_checkpoints
