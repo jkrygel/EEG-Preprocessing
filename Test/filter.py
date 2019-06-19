@@ -14,7 +14,7 @@ sfreq = info.get("sfreq")
 # https://martinos.org/mne/stable/generated/mne.io.Raw.html?highlight=notch#mne.io.Raw.notch_filter
 dat.notch_filter(60)
 
-# bandpass filter and compute Hilbert (Beta)
+# bandpass filter (Beta)
 dat.filter(13, 25, n_jobs=1,        # use more jobs to speed up
             l_trans_bandwidth=1,    # make sure filter params are the same
             h_trans_bandwidth=1,    # in each band and skip "auto" option
