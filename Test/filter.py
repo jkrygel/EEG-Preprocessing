@@ -24,4 +24,3 @@ dat.filter(13, 25, n_jobs=1,        # use more jobs to speed up
             fir_design="firwin")
 
 dat.plot()
->>>>>>> ccc01bf955a20b2ab9051f0a825f8de9e75a87c9
