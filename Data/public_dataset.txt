@@ -1,0 +1,13 @@
+Motor-Imagery
+
+https://www.physionet.org/physiobank/database/eegmmidb/
+http://www.bbci.de/competition/iv/#dataset1
+https://github.com/robintibor/high-gamma-dataset
+
+Emotion-Recognition
+
+http://bcmi.sjtu.edu.cn/~seed/seed-iv.html
+http://www.enterface.net/results/
+
+Source:
+https://github.com/meagmohit/EEG-Datasets
