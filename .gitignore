@@ -3,3 +3,6 @@ Test/.ipynb_checkpoints
 
 # python cache
 Test/__pycache__
+
+# mergetool backup file
+*.orig
