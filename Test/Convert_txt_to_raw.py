@@ -35,39 +35,6 @@ class converter:
         # Create the info structure needed by MNE
         info = mne.create_info(ch_names, sfreq)
 
-<<<<<<< HEAD
-# Read the CSV file as a NumPy array
-data = np.loadtxt(name[-1], delimiter=',', skiprows=6, usecols=tuple(range(1,9)))
-
-# Some information about the channels
-ch_names = ['EEG1','EEG2','EEG3','EEG4','EEG5','EEG6','EEG7','EEG8']  
-
-# Sampling rate of the Cyton Board
-sfreq = 250  # Hz
-
-# Create the info structure needed by MNE
-info = mne.create_info(ch_names, sfreq)
-
-# Finally, create the Raw object and save
-raw = mne.io.RawArray(data.T, info)
-raw.save(f"{name[-1].split('.')[0]}.fif")
-||||||| merged common ancestors
-# Read the CSV file as a NumPy array
-data = np.loadtxt(name[-1], delimiter=',', skiprows=6, usecols=tuple(range(1,9)))
-
-# Some information about the channels
-ch_names = ['CH 1','CH 2','CH 3','CH 4','CH 5','CH 6','CH 7','CH 8']  
-
-# Sampling rate of the Cyton Board
-sfreq = 250  # Hz
-
-# Create the info structure needed by MNE
-info = mne.create_info(ch_names, sfreq)
-
-# Finally, create the Raw object and save
-raw = mne.io.RawArray(data.T, info)
-raw.save(f"{name[-1].split('.')[0]}.fif")
-=======
         # Create the Raw object
         self.raw = mne.io.RawArray(data.T, info)
         
@@ -92,4 +59,3 @@ if __name__ == "__main__":
         raise AttributeError("Number of arguments is invalid, received arguments: {name}")
     c = converter(name)
     c.save()
->>>>>>> refs/remotes/origin/master
