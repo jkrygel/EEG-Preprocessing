@@ -15,7 +15,7 @@ name = argv
 data = np.loadtxt(name[-1], delimiter=',', skiprows=6, usecols=tuple(range(1,9)))
 
 # Some information about the channels
-ch_names = ['CH 1','CH 2','CH 3','CH 4','CH 5','CH 6','CH 7','CH 8']  
+ch_names = ['EEG1','EEG2','EEG3','EEG4','EEG5','EEG6','EEG7','EEG8']  
 
 # Sampling rate of the Cyton Board
 sfreq = 250  # Hz

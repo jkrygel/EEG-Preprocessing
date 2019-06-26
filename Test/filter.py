@@ -5,7 +5,7 @@ import mne
 from mne.filter import notch_filter
 
 # raw data
-dat = read_raw_bdf("../Data/Subject_1-1.bdf", preload=True)
+dat = mne.read_raw_bdf("../Data/Subject_1-1.bdf", preload=True)
 event = mne.events_from_annotations(dat)
 info = dat.info
 sfreq = info.get("sfreq")
@@ -24,4 +24,3 @@ dat.filter(13, 25, n_jobs=1,        # use more jobs to speed up
             fir_design="firwin")
 
 dat.plot()
->>>>>>> ccc01bf955a20b2ab9051f0a825f8de9e75a87c9

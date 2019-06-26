@@ -1,2 +1,4 @@
 # jupyter notebook
 Test/.ipynb_checkpoints
+*.orig
+*.gitignore
