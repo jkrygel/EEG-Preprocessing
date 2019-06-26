@@ -1,11 +1,5 @@
 # jupyter notebook
 Test/.ipynb_checkpoints
-<<<<<<< HEAD
-*.orig
-*.gitignore
-||||||| merged common ancestors
-=======
 
 # python cache
 Test/__pycache__
->>>>>>> refs/remotes/origin/master
