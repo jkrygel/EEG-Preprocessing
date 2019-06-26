@@ -23,4 +23,11 @@ dat.filter(13, 25, n_jobs=1,        # use more jobs to speed up
             h_trans_bandwidth=1,    # in each band and skip "auto" option
             fir_design="firwin")
 
+<<<<<<< HEAD
 dat.plot()
+||||||| merged common ancestors
+dat.plot()
+>>>>>>> ccc01bf955a20b2ab9051f0a825f8de9e75a87c9
+=======
+dat.plot()
+>>>>>>> refs/remotes/origin/master
