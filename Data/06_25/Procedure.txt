@@ -1,0 +1,15 @@
+Recordings 1-4:
+Only channel 1 (AF7) recording, ground electrode on ankle, reference behind left ear
+
+Recordings 5+:
+Channels 1 (AF7) and 2 (F7) recording, ground electrode on ankle, reference behind left ear
+
+Procedure was as follows:
+	- @ 10s - blink
+	- @ 15s - blink
+	- @ 20s - close eyes
+End after 80s
+
+
+Notes:
+- On recording #4, first eye blink was ~ 1s later than normal (@ ~ 11s)
