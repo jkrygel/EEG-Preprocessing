@@ -34,19 +34,50 @@ raw = mne.io.read_raw_fif("OpenBCI-RAW-06_25_1.fif", preload=True)
 ##           fir_design='firwin')
 
 # Apply high-pass (1 Hz), alpha band filter, and notch filter (60 hz)
+##band, fmin, fmax = freqs[1]
+##raw_data = raw.get_data()
+##length = np.arange(1, raw_data.shape[-1]+1)
+##plt.plot(length, raw_data[0])
+##plt.show()
+##raw_data = filters.notch_filter(raw_data)
+##plt.plot(length, raw_data[0])
+##plt.show()
+##raw_data = filters.bandpass_filter(raw_data, fmin, fmax)
+##plt.plot(length, raw_data[0])
+##plt.show()
+##raw_fft = filters.fft(raw_data)
+##plt.plot(length, raw_fft[0])
+##plt.show()
+
+# Apply high-pass (1 Hz), alpha band filter, and notch filter (60 hz)
 band, fmin, fmax = freqs[1]
 raw_data = raw.get_data()
 length = np.arange(1, raw_data.shape[-1]+1)
+
+plt.subplot(4, 1, 1)
 plt.plot(length, raw_data[0])
-plt.show()
+plt.title("raw data")
+plt.grid(True)
+
+plt.subplot(4, 1, 2)
 raw_data = filters.notch_filter(raw_data)
 plt.plot(length, raw_data[0])
-plt.show()
+plt.title("notch filter")
+plt.grid(True)
+
+plt.subplot(4, 1, 3)
 raw_data = filters.bandpass_filter(raw_data, fmin, fmax)
 plt.plot(length, raw_data[0])
-plt.show()
+plt.title("bandpass filter")
+plt.grid(True)
+
+plt.subplot(4, 1, 4)
 raw_fft = filters.fft(raw_data)
 plt.plot(length, raw_fft[0])
+plt.title("fft")
+plt.grid(True)
+
+plt.tight_layout()
 plt.show()
 
 # Remove reference from raw obj; prevent MNE from adding EEG average reference.
