@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Jun 24 16:22:12 2019
-Last edit on Wed Jun 26 11:47:12 2019
 
-@author: Julian, Yiwen
+@author: Yiwen, Julian
+
+The code converts OpenBCI text data to raw fif data
 """
 from sys import argv
 import numpy as np

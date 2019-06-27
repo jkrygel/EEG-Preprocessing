@@ -2,6 +2,8 @@
 # Authors: Denis A. Engemann <denis.engemann@gmail.com>
 #
 # License: BSD (3-clause)
+# https://www.martinos.org/mne/stable/auto_examples/time_frequency/plot_time_frequency_global_field_power.html?highlight=bandpass%20filter
+# Explore event-related dynamics for specific frequency bands
 
 import numpy as np
 import matplotlib.pyplot as plt

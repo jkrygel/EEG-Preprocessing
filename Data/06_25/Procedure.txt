@@ -13,3 +13,5 @@ End after 80s
 
 Notes:
 - On recording #4, first eye blink was ~ 1s later than normal (@ ~ 11s)
+
+There is only 1 test subject for generating data
