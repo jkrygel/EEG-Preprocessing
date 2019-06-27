@@ -1,8 +1,10 @@
 # jupyter notebook
 Test/.ipynb_checkpoints
+Dev/.ipynb_checkpoints
 
 # python cache
 Test/__pycache__
+Dev/__pycache__
 
 # mergetool backup file
 *.orig

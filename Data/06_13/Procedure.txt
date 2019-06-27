@@ -9,3 +9,5 @@ Channel Locations:
 8 - T10
 
 Both reference and ground were placed on the forehead between the eyes and up.
+
+There are 2 test subjects for generating data
