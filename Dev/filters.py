@@ -37,4 +37,4 @@ class filters:
 
     @staticmethod
     def fft(dat):
-        return dat.real
+        return fft(dat).real
