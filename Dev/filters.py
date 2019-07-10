@@ -7,6 +7,7 @@ Created on Tue Jun 25 7:51:25 2019
 The code is about notch filter, bandpass filter and fft
 """
 import mne.filter as mf
+import numpy as np
 from numpy.fft import fft
 
 class filters:
@@ -35,6 +36,19 @@ class filters:
         #             fir_design="firwin")
         return mf.filter_data(dat, sfreq, l_freq, h_freq, l_trans_bandwidth=1, h_trans_bandwidth=1, n_jobs=1, fir_design="firwin")
 
+##    @staticmethod
+##    def fft(dat):
+##        r = fft(dat).real
+##        return np.log10(np.clip(r, 1e-20, 1e100))
+
     @staticmethod
     def fft(dat):
-        return fft(dat).real
+        Fs = 250 # sample rate
+        T = 1 / Fs # sampling period
+        t = 0.004 # seconds of sampling
+        N = Fs * t # total points in signal
+        y = fft(y)[0: int(N / 2)] / N
+        y[1:] = 2 * y[1:]
+        y = abs(y)
+        f = Fs * np.arange((N / 2)) / N
+        return f, y
