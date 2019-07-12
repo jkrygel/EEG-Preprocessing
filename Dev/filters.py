@@ -6,8 +6,8 @@ Created on Tue Jun 25 7:51:25 2019
 
 The code is about notch filter, bandpass filter and fft
 """
+import numpy as np
 import mne.filter as mf
-from numpy.fft import fft
 
 class filters:
     @staticmethod
@@ -37,4 +37,9 @@ class filters:
 
     @staticmethod
     def fft(dat):
-        return dat.real
+        Fs = 250 # sample rate
+##        f = np.linspace(0, Fs / 2, dat.shape[-1] / 2 + 1)
+##        y = np.log10(np.clip(np.abs(np.fft.rfft(dat) / dat.shape[-1]), 1e-20, 1e100))
+        f = np.fft.rfftfreq(dat.shape[-1], d=1./Fs)
+        y = np.log10(np.clip(np.abs(np.fft.rfft(dat) / dat.shape[-1]), 1e-20, 1e100))
+        return f, y
