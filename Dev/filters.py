@@ -38,8 +38,12 @@ class filters:
     @staticmethod
     def fft(dat):
         Fs = 250 # sample rate
+<<<<<<< HEAD
 ##        f = np.linspace(0, Fs / 2, dat.shape[-1] / 2 + 1)
 ##        y = np.log10(np.clip(np.abs(np.fft.rfft(dat) / dat.shape[-1]), 1e-20, 1e100))
         f = np.fft.rfftfreq(dat.shape[-1], d=1./Fs)
+=======
+        f = np.linspace(0, Fs / 2, dat.shape[-1] / 2 + 1)
+>>>>>>> ccf02f827875ee4d3adb76d82ae7ee3a2d2b75f0
         y = np.log10(np.clip(np.abs(np.fft.rfft(dat) / dat.shape[-1]), 1e-20, 1e100))
         return f, y
