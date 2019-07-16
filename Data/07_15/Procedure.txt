@@ -1,0 +1,23 @@
+one channel:
+BIAS bottom
+GND bottom
+CH1 top working
+CH1 bottom ref
+
+three channels:
+BIAS bottom
+GND bottom
+CH1 top working
+CH1 bottom bias
+CH2 top ref
+CH2 bottom bias
+CH3 top working
+CH3 bottom ref
+
+After OpenBCI-RAW-2019-07-15_16-17-23 (Not used)
+one channel:
+GND bottom
+CH1 top ref
+CH1 bottom GND
+
+Focus on measuring behavior
