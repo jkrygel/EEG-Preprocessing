@@ -1,0 +1,4 @@
+one channel:
+SRB2 -> ref
+N -> working
+BIAS2 -> ground
