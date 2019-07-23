@@ -135,7 +135,6 @@ plt.show()
 
 frq, raw_fft = filters.fft(raw_data)
 fig = plt.plot(frq, raw_fft[0])
-##plt.xscale("log")
 ##plt.yscale("log")
 plt.ylabel("Amplitude")
 plt.xlabel("Frequency [Hz]")
