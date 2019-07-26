@@ -1,0 +1,257 @@
+data = importdata('OpenBCI-RAW-2019-07-17_12-11-37.txt');
+plot(data.textdata[,1], data.textdata[,2])
+plot(data.textdata[1], data.textdata[2])
+data.textdata
+col(data.textdata)
+x= data.textdata[,1]
+x= data.textdata(,1)
+dat = data.data
+dat = data.textdata
+cls
+clear;
+data = importdata('OpenBCI-RAW-2019-07-17_12-11-37.txt');
+dat=data.textdata
+dat=cell2mat(dat)
+cls
+clr
+clfclr
+clr
+data = importdata('OpenBCI-RAW-2019-07-17_12-11-37.txt');
+open(data)
+data1 = load('OpenBCI-RAW-2019-07-17_12-11-37.txt')
+plot(data1[,1],data1[,2])
+plot(data1{,1},data1{,2})
+plot(data1{:,1},data1{:,2})
+plot(data1(:,1),data1(:,2))
+[1,5,1]
+[1:5:1]
+time(1:54109)
+time = (1:54109)
+plot(time,data1(:,2))
+data1(:,1) = time;
+plot(data1(:,1),data1(:,2))
+plot(data1(:,1),data1(:,3))
+data1(:,4) = data(:,2)-data1(:,3);
+data1(:,4) = data1(:,2)-data1(:,3);
+plot(data1(:,1),data1(:,4))
+data1(:,5) = fft(data1(:,4));
+plot(data1(:,1),data1(:,5))
+l=54109
+p2=abs(data1(:,5)/54109);
+p1 = p2(1:l/2+1);
+p1
+p1 = p2(1:l/2+1);
+p1 = p2(:l/2+1);
+p1 = p2(,:l/2+1);
+l/2
+int((l/2)+1)
+(l/2)+1
+l/2
+p1 = p2(1:27056);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(l/2))/l;
+plot(f,p1)
+plot(f,p1(1:end-1))
+d2=fft(data1(:2));
+d2=fft(data1(,:2));
+d2=fft(data1(:,2));
+plot(d2,p1)
+plot(d2,p2)
+d2a=abs(d2/l);
+plot(d2a,p2)
+plot(f,d2a)
+d2p1 = d22(1:27056);
+d2p1 = d2a(1:27056);
+d2p1(2:end-1) = 2* d2p1(2:end-1);
+plot(f,d2p1)
+plot(f,d2p1(1:end-1))
+plot(f,p1(1:end-1))
+d3 = fft(data1(:,3));
+d3a=abs(d3/l);
+d3p1=d3a(1:27056);
+d3p1(2:end-1) = 2* d3p1(2:end-1);
+plot(f,d3p1(1:end-1))
+cls;
+clearl
+clear;
+clc;
+data = importdata('OpenBCI-RAW-2019-07-17_15-02-15.txt');
+data(:,1) = (1,32587)
+data(:,1) = (1:32587)
+data(:,1) = (1:32587);
+time=(1:32587)
+data(:,1) = time;
+dat = data.textdata
+clc;clear;
+data = load('OpenBCI-RAW-2019-07-17_15-02-15.txt');
+data(:,1) = (1:32587);
+c1 = abs(fft(data(:,3))/32587);
+p1 = c1(1:L/2+1);
+p1 = c1(1:32587/2+1);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(32587/2))/32587;
+plot(f, p1(:end-1));
+plot(f, p1(:,end-1));
+plot(f,p1(1:end-1))
+plot(f.T,p1)
+plot(f,p1.T)
+plot(transpose(f),p1)
+data(:,5) = data(:,3)-data(:,4);
+c1 = abs(fft(data(:,3))/32587);
+p1 = c1(1:L/2+1);
+p1 = c1(1:32587/2+1);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(32587/2))/32587;
+plot(transpose(f),p1)
+c1 = abs(fft(data(:,5))/32587);
+p1 = c1(1:32587/2+1);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(32587/2))/32587;
+plot(transpose(f),p1)
+c2 = fft(data(:,5));
+p1 = c2(1:32587/2+1);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(32587/2))/32587;
+plot(transpose(f),p1)
+c1 = abs(fft(data(:,5))/32587);
+%c2 = fft(data(:,5));
+p1 = c1(1:32587/2+1);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(32587/2))/32587;
+plot(transpose(f),p1)
+c1 = abs(fft(data(:,2))/32587);
+%c2 = fft(data(:,5));
+p1 = c1(1:32587/2+1);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(32587/2))/32587;
+plot(transpose(f),p1)
+c1 = abs(fft(data(:,3))/32587);
+%c2 = fft(data(:,5));
+p1 = c1(1:32587/2+1);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(32587/2))/32587;
+plot(transpose(f),p1)
+c1 = fft(data(:,3));
+%p1 = c1(1:32587/2+1);
+%p1(2:end-1) = 2*p1(2:end-1);
+%f = 250*(0:(32587/2))/32587;
+%plot(transpose(f),p1)
+f = 250*(0:32587)/32587;
+plot(transpose(f),c1)
+plot(transpose(f)(:,end-1),c1)
+plot(transpose(f(:,end-1)),c1)
+c1 = abs(fft(data(:,3))/32587);
+p1 = c1(1:32587/2+1);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(32587/2))/32587;
+plot(transpose(f),p1);
+data = load('OpenBCI-RAW-2019-07-17_15-02-15.txt');
+clc;clear;
+data = load('OpenBCI-RAW-2019-07-17_15-54-03.txt');
+data(:,1) = (1:30422);
+c1 = abs(fft(data(:,2))/30422);
+p1 = c1(1:30422/2+1);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(30422/2))/30422;
+plot(transpose(f),p1);
+clc;clear;
+data = load('OpenBCI-RAW-2019-07-17_15-02-15.txt');
+data(:,1) = (1:32587);
+c1 = abs(fft(data(:,3))/32587);
+p1 = c1(1:32587/2+1);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(32587/2))/32587;
+plot(transpose(f),p1);
+data(:,5) = data(:,3)-data(:,4);
+c1 = abs(fft(data(:,5))/32587);
+p1 = c1(1:32587/2+1);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(32587/2))/32587;
+plot(transpose(f),p1);
+clc;clear;
+data = load('OpenBCI-RAW-2019-07-17_15-54-03.txt');
+data(:,1) = (1:30422);
+c1 = abs(fft(data(:,2))/30422);
+c1 = abs(fft(data(:,5))/32587);
+p1 = c1(1:32587/2+1);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(32587/2))/32587;
+plot(transpose(f),p1);
+c1 = abs(fft(data(:,2))/30422);
+p1 = c1(1:30422/2+1);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(30422/2))/30422;
+plot(transpose(f),p1);
+data = load('OpenBCI-RAW-2019-07-17_15-02-15.txt');
+data(:,1) = (1:32587);
+data(:,5) = data(:,3)-data(:,4);
+c1 = abs(fft(data(:,3))/32587);
+p1 = c1(1:32587/2+1);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(32587/2))/32587;
+plot(transpose(f),p1);
+c1 = abs(fft(data(:,2))/32587);
+p1 = c1(1:32587/2+1);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(32587/2))/32587;
+plot(transpose(f),p1);
+clc;clear;
+data = load('OpenBCI-RAW-2019-07-17_16-34-44.txt');
+data(:,1) = (1:55311);
+c1 = abs(fft(data(:,2))/55311);
+p1 = c1(1:55311/2+1);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(55311/2))/55311;
+plot(transpose(f),p1);
+clc;clear;
+data = load('OpenBCI-RAW-2019-07-17_16-45-41.txt');
+data(:,1) = (1:61323);
+c1 = abs(fft(data(:,2))/61323);
+p1 = c1(1:61323/2+1);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(61323/2))/61323;
+plot(transpose(f),p1);
+dat = data(,:)
+61323//2
+61323/2
+dat = data(30700,:);
+data(:,:200)
+data(:30700,1)
+data(30700:end,1)
+data(30700:end,2)
+dat=data(30700:end,2);
+c1 = abs(fft(dat)/30624);
+p1 = c1(1:30624/2+1);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(30624/2))/30624;
+plot(transpose(f),p1);
+clc;clear;
+data = load('OpenBCI-RAW-2019-07-17_17-06-19.txt');
+data(:,1) = (1:6494);
+c1 = abs(fft(data(:,2))/6494);
+p1 = c1(1:6494/2+1);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(6494/2))/6494;
+plot(transpose(f),p1);
+clc;clear;
+data = load('OpenBCI-RAW-2019-07-17_16-56-36.txt');
+data(:,1) = (1:46896);
+dat=data(30700:end,2);
+dat=data(16197:end,2);
+c1 = abs(fft(dat)/16197);
+p1 = c1(1:16197/2+1);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(16197/2))/16197;
+plot(transpose(f),p1);
+clc;clear;
+data = load('OpenBCI-RAW-2019-07-17_17-22-05.txt');
+data(:,1) = (1:24530);
+24530/3
+24530*2/3
+8500
+dat=data(8500:end,2);
+c1 = abs(fft(dat)/16031);
+p1 = c1(1:16031/2+1);
+p1(2:end-1) = 2*p1(2:end-1);
+f = 250*(0:(16031/2))/16031;
+plot(transpose(f),p1);
