@@ -1,0 +1,5 @@
+N1 -> work
+N2 -> back work (more alpha)
+N3 -> ref
+SRB2 -> body ground
+BIAS2 -> body ground

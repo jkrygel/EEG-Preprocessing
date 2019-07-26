@@ -1,0 +1,3 @@
+P1 -> work
+N1 -> ref
+AGND -> body ground

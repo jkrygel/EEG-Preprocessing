@@ -1,0 +1,5 @@
+N1 -> work
+P1 -> ref
+
+30s of opening
+after that, last 1 minute is for closing
